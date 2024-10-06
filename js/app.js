@@ -8,14 +8,11 @@ window.addEventListener('DOMContentLoaded', function() {
     maximumAge: 0
   };
 
-  var callsign = "M0MJX";
-
   function success(pos) {
     var crd = pos.coords;
     var osLatLng = new LatLng(crd.latitude, crd.longitude);
     var osGrdRef = osLatLng.toOSRef();
 
-    document.getElementById("callsign").value = callsign;
     document.getElementById("latdec").value = precisionRoundMod(crd.latitude, 6);
     document.getElementById("londec").value = precisionRoundMod(crd.longitude, 6);
     document.getElementById("latdms").value = getDMS(crd.latitude, 'lat');
@@ -62,9 +59,8 @@ window.addEventListener('DOMContentLoaded', function() {
   function getCallsign() {
     let text = prompt("Please enter the callsign:", callsign);
     if (text != null) {
-      callsign = text;
+      document.getElementById("callsign").value = callsign;
     }
-    document.getElementById("callsign").value = callsign;
   }
 
   function setTime() {
