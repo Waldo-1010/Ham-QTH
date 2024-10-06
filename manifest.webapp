@@ -1,0 +1,36 @@
+{
+  "version": "0.3.1",
+  "name": "Ham QTH",
+  "description": "Ham QTH displays all the location information needed by a Radio Amateur for a QSO.",
+  "subtitle": "QTH locn. in Maidenhed and WAB formats",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/icon16x16.png",
+    "48": "/img/icons/icon48x48.png",
+    "60": "/img/icons/icon60x60.png",
+    "128": "/img/icons/icon128x128.png"
+  },
+  "theme_color": "#65ACFF",
+  "developer": {
+    "name": "Birchwood Electronics",
+    "url": ""
+  },
+	"dependencies": {
+		"ads-sdk": "1.5.8"
+	},
+  "type": "privileged",
+  "permissions": {
+    "geolocation": {
+      "description": "Required for location calculations"
+    }
+  },
+  "locales": {
+    "en-GB": {
+      "name": "Ham QTH",
+      "description": "Current location in several formats",
+      "permissions": {}
+    }
+  },
+  "default_locale": "en-GB",
+  "orientation": [ "portrait-primary" ]
+}

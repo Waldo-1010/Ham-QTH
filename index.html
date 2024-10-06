@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+        <title>HAM QTH</title>
+       
+        <link rel="manifest" href="manifest.webapp" type="application/x-web-app-manifest+json">
+        <link rel="stylesheet" href="css/app.css" type="text/css" />
+        <script type="text/javascript" src="js/app.js" defer></script>
+        <script type="text/javascript" src="js/libs/maidenhead.js" defer></script>
+        <script type="text/javascript" src="js/libs/jscoord-1.1.1.js" defer></script>
+        <script type="text/javascript" src="js/libs/kaiads.v5.min.js" defer></script>
+    </head>
+    <body>
+        <h2>HAM QTH</h2>
+            <table id="locations"> 
+                <tr>
+                    <td>
+                        <label>Callsign:</label>
+                    </td>
+                    <td>
+                        <output id = "callsign"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>UTC:</label>
+                    </td>
+                    <td>
+                        <output id = "utctime"></output>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <label for="mdnhd">Maidenhead:</label>
+                    </td>
+                    <td>
+                        <output id="mdnhd"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="oswab">WAB Square:</label>
+                    </td>
+                    <td>
+                        <output id="oswab"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="osloc">OS loc:</label>
+                    </td>
+                    <td>
+                        <output id="osloc"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="latdec">LAT dec:</label>
+                    </td>
+                    <td>
+                        <output id="latdec"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="londec">LON dec:</label>
+                    </td>
+                    <td>
+                        <output id="londec"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="latdms">LAT dms:</label>
+                    </td>
+                    <td>
+                        <output id="latdms"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="londms">LON dms:</label>
+                    </td>
+                    <td>
+                        <output id="londms"></output>
+                    </td>
+                </tr>
+            </table>
+            <div id='ad-container'></div>
+    </body>
+</html>
